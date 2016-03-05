@@ -395,6 +395,36 @@ html {
   overflow-x: hidden;
 }
 
+#appendContainer {
+  height: 300px;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+#append {
+  height: 290px;
+  width: 419px;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+#append {
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  -webkit-appearance: none;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  
+}
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*

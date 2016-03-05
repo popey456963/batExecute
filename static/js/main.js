@@ -6,14 +6,14 @@ function submit() {
     socket.emit("bat", batFile, function(packet) {
         console.log(packet)
         if (packet == "invalid") {
-            div.innerHTML = div.innerHTML + "<span style='color:red'>Invalid Password</span><br />"
+            div.innerHTML = "<span style='color:red'>Invalid Password</span><br />" + div.innerHTML
         } else if (packet) {
-            div.innerHTML = div.innerHTML + "<span style='color:green'>Success!</span><br />"
-            div.innerHTML = div.innerHTML + "Output: " + packet + "<br />"
+            div.innerHTML = "Output: " + packet + "<br />" + div.innerHTML
+            div.innerHTML = "<span style='color:green'>Success!</span><br />" + div.innerHTML
         }
         else {
-            div.innerHTML = div.innerHTML + "<span style='color:red'>Failure :(</span><br />"
-            div.innerHTML = div.innerHTML + "Log: " + packet + "<br />"
+            div.innerHTML = "Log: " + packet + "<br />" + div.innerHTML
+            div.innerHTML = "<span style='color:red'>Failure :(</span><br />" + div.innerHTML
         }
     });
 }
