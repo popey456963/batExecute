@@ -393,10 +393,11 @@ hr {
 
 html {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #appendContainer {
-  height: 300px;
+  height: 500px;
   overflow: auto;
   overflow-y: auto;
   overflow-x: auto;
@@ -422,7 +423,6 @@ html {
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
-  
 }
 
 /* Media Queries
